@@ -1,9 +1,16 @@
 import { css } from "../styled-system/css";
 
-const Home = ()=>{
+export default function Home() {
   return (
-    <div className={css({ fontSize: "2xl", fontWeight: 'bold',_hover:{bg:"red.400"} ,color:{_hover:"blue",base:"red.400"}})}>Hello 🐼!</div>
-  )
+    <div
+      className={css({
+        _hover: { bg: "red.400" },
+        color: { _hover: "blue", base: "red.400" },
+        fontSize: "2xl",
+        fontWeight: "bold",
+      })}
+    >
+      Hello 🐼!
+    </div>
+  );
 }
-
-export default Home;
